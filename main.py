@@ -5,7 +5,7 @@ import random
 import os
 
 my_email = "kai2flie@gmail.com"
-password = "KaiKai0520!"
+password = #Enter Password
 # 1. Update the birthdays.csv
 
 data = pd.read_csv("birthdays.csv")
