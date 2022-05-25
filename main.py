@@ -22,7 +22,9 @@ with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
     connection.starttls()
     connection.login(user=my_email, password=password)
     for i in range(len(bday_list)):
-        personalized_msg = path.replace('[NAME]', bday_list.iloc[i, 0])
+        with open(path) as file:
+            file = file.read()
+            personalized_msg = file.replace('[NAME]', bday_list.iloc[i, 0])
         connection.sendmail(
             from_addr=my_email, 
             to_addrs=bday_list.iloc[i, 1], 
