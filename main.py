@@ -5,7 +5,7 @@ import random
 import os
 
 my_email = "kai2flie@gmail.com"
-password = "KaiKai0520!"
+password = #Password
 
 data = pd.read_csv("birthdays.csv")
 df = {'name':'Kali', 'email':'keilandraije@icloud.com', 'year':2022, 'month':5, 'day':25}
